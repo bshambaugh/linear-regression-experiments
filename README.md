@@ -13,4 +13,4 @@ The videos in the range 3.2 - 3.4 at https://www.youtube.com/playlist?list=PLRqw
 How to Do Linear Regression using Gradient Descent by Siraj Raval at https://www.youtube.com/watch?v=XdM6ER7zTLk
 with code at https://github.com/llSourcell/linear_regression_live
 
-This optimization works for problems that do not present themselves as functions, thus do have not analytical solution. (Thank you Waylon Flinn) It does not appear to be optimization like in RW Hamming's book, "Numerical Methods for Scientists and Engineers".
+This optimization works for problems that do not present themselves as functions, thus do have not analytical solution. (Thank you Waylon Flinn) It does not appear to be optimization like in RW Hamming's book, "Numerical Methods for Scientists and Engineers", because we cannot find a derivative?
