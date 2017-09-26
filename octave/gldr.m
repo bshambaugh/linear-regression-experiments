@@ -6,9 +6,10 @@ m = length(y);
 x = [ones(m, 1), x];
 theta = [0.0;0.0];
 alpha = 0.02;
-for k=1:2500,
+iterations = 2500;
+for k=1:iterations,
    acc = 0.0;
-   for j = 1:m,
+   for j = 1:m,  % This code could be futher optimized? Study Matrix Algebra.
       acc = ((theta'*x(j,:)'-y(j,1))*x(j,:))'+acc;
    end
    theta = theta - (alpha / m)*acc;
