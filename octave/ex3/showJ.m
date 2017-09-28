@@ -1,9 +1,13 @@
-x = load('ex2x.dat');
-y = load('ex2y.dat');
+x = load('ex3x.dat');
+y = load('ex3y.dat');
 m = length(y);
 x = [ones(m, 1), x];
 theta = zeros(size(x(1,:)))'; % initialize fitting parameters
-alpha = 0.02; %your intial learning rate%
+sigma = std(x);
+mu = mean(x);
+x(:,2) = (x(:,2) - mu(2))./ sigma(2);
+x(:,3) = (x(:,3) - mu(3))./ sigma(3);
+alpha = 0.5; %your intial learning rate%
 J = zeros(50, 1);
 
 for num_iterations = 1:2500
