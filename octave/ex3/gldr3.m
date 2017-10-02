@@ -1,7 +1,7 @@
 % This includes the normalized version for linear regression
 % Notice that iterations are not used because gradient descent is not used.
-x = load('ex2x.dat');
-y = load('ex2y.dat');
+x = load('ex3x.dat');
+y = load('ex3y.dat');
 m = length(y);
 x = [ones(m, 1), x];
 %theta = (zeros(1,columns(x)))';
